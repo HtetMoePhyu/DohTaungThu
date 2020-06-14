@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/fragmentHome">
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.roomdbexample.dohtaungthu.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/fragmentNews"
+        android:name="com.roomdbexample.dohtaungthu.ui.qualityseeds.QualitySeedFragment"
+        android:label="@string/title_news"
+        tools:layout="@layout/fragment_quality_seeds" />
+
+    <fragment
+        android:id="@+id/fragmentOrders"
+        android:name="com.roomdbexample.dohtaungthu.ui.finance.FinanceFragement"
+        android:label="@string/title_orders"
+        tools:layout="@layout/fragment_finance" />
+
+    <fragment
+        android:id="@+id/fragmentProfile"
+        android:name="com.roomdbexample.dohtaungthu.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

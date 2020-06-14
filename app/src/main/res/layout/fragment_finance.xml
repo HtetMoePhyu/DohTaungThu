@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@color/screen_background_color"
+        tools:context=".ui.finance.FinanceFragement">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:text="အသေးစားချေးငွေလုပ်ငန်းများ"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <!--1st row-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10"
+            android:layout_marginTop="@dimen/gap_10">
+
+            <LinearLayout
+                android:id="@+id/layoutMaha"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/gap_15"
+                android:background="@drawable/rounded_stroke_color_grey">
+
+                <ImageView
+                    android:layout_width="@dimen/gap_90"
+                    android:layout_height="@dimen/gap_90"
+                    android:src="@drawable/ic_maha"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MAHA Agricultural Microfinance"
+                    android:padding="@dimen/gap_8"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutProxinity"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_stroke_color_grey">
+
+                <ImageView
+                    android:layout_width="@dimen/gap_90"
+                    android:layout_height="@dimen/gap_90"
+                    android:src="@drawable/ic_proximity"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Proximity Finance \n"
+                    android:padding="@dimen/gap_8"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--2nd row-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/gap_15"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10">
+
+            <LinearLayout
+                android:id="@+id/layoutLOCL"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/gap_15"
+                android:background="@drawable/rounded_stroke_color_grey">
+
+                <ImageView
+                    android:layout_width="@dimen/gap_90"
+                    android:layout_height="@dimen/gap_90"
+                    android:src="@drawable/ic_lolc"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOLC Myanmar Microfinance"
+                    android:padding="@dimen/gap_8"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutGBS"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_stroke_color_grey">
+
+                <ImageView
+                    android:layout_width="@dimen/gap_90"
+                    android:layout_height="@dimen/gap_90"
+                    android:src="@drawable/ic_good_brothers"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good Brother's Microfinance"
+                    android:padding="@dimen/gap_8"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--3rd row-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/gap_15"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10">
+
+            <LinearLayout
+                android:id="@+id/layoutFulleton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/gap_15"
+                android:background="@drawable/rounded_stroke_color_grey">
+
+                <ImageView
+                    android:layout_width="@dimen/gap_90"
+                    android:layout_height="@dimen/gap_90"
+                    android:src="@drawable/ic_fullerton"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fullerton Finance \n Myanmar"
+                    android:padding="@dimen/gap_8"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutAlliance"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_stroke_color_grey">
+
+                <ImageView
+                    android:layout_width="@dimen/gap_90"
+                    android:layout_height="@dimen/gap_90"
+                    android:src="@drawable/ic_aliance"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alliance Microfinance \n"
+                    android:padding="@dimen/gap_8"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--4th row-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/gap_15"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10">
+
+            <LinearLayout
+                android:id="@+id/layoutYTK"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/gap_15"
+                android:background="@drawable/rounded_stroke_color_grey">
+
+                <ImageView
+                    android:layout_width="@dimen/gap_90"
+                    android:layout_height="@dimen/gap_90"
+                    android:src="@drawable/ic_ytk"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ရေတံခွန်"
+                    android:padding="@dimen/gap_10"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

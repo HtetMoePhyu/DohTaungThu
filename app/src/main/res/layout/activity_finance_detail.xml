@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/screen_background_color"
+    tools:context=".ui.finance.FinanceDetailActivity">
+
+    <!--Back-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/iconBackFinanceDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10"/>
+
+        <TextView
+            android:id="@+id/tvFinanceCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <!--Divider-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        android:layout_marginBottom="@dimen/gap_10"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_10"
+        android:layout_marginEnd="@dimen/gap_10">
+
+        <TextView
+            android:id="@+id/tvAboutCompanyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company အကြောင်းအသေးစိတ်"
+            android:textColor="@android:color/black"
+            android:padding="@dimen/gap_10"/>
+
+        <TextView
+            android:id="@+id/tvAboutCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is about the company"
+            android:textSize="@dimen/text_size_14"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/gap_15"
+            android:paddingEnd="@dimen/gap_15"
+            android:layout_below="@+id/tvAboutCompanyTitle"/>
+
+
+        <TextView
+            android:id="@+id/tvSeeMoreAboutCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="see more ..."
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvAboutCompany"/>
+    </RelativeLayout>
+
+    <!--Divider-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="#ccc"
+        android:layout_margin="@dimen/gap_10"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gap_45"
+        android:layout_marginStart="@dimen/gap_10"
+        android:layout_marginEnd="@dimen/gap_10">
+
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="စဉ်"
+            android:padding="@dimen/gap_10"/>
+
+        <View
+            android:id="@+id/dividerLine"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dividerColor"
+            android:layout_toRightOf="@+id/tvNumber"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ဆိုင်ခွဲအမည်"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/gap_20"
+            android:layout_toRightOf="@+id/dividerLine"/>
+
+    </RelativeLayout>
+
+    <!--Divider-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="#ccc"
+        android:layout_marginBottom="@dimen/gap_10"
+        android:layout_marginStart="@dimen/gap_10"
+        android:layout_marginEnd="@dimen/gap_10"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBranchList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

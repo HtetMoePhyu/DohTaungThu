@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_editProfile"
+    app:startDestination="@+id/fragmentEditProfile">
+
+    <fragment
+        android:id="@+id/fragmentEditProfile"
+        android:name="com.roomdbexample.dohtaungthu.ui.profile.EditProfileFragment"
+        android:label="@string/edit_profile_txt"
+        tools:layout="@layout/edit_profile_fragment" />
+
+</navigation>

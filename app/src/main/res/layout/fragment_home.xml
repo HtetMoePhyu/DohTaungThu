@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="@color/screen_background_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.home.HomeFragment"
+        android:layout_marginBottom="@dimen/gap_50">
+
+        <!--Tabs-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_50"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+
+            <RelativeLayout
+                android:id="@+id/tabSeeds"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvTitleSeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/title_seeds"
+                    android:padding="@dimen/gap_10"
+                    android:gravity="center"/>
+
+                <View
+                    android:id="@+id/tabSelectedSeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_below="@+id/tvTitleSeed"
+                    android:layout_marginStart="@dimen/gap_8"
+                    android:layout_marginEnd="@dimen/gap_8"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/tabMap"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvTitleMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="@string/title_map"
+                    android:padding="@dimen/gap_10"
+                    android:gravity="center"/>
+
+                <View
+                    android:id="@+id/tabSelectedMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_below="@+id/tvTitleMap"
+                    android:layout_marginStart="@dimen/gap_8"
+                    android:layout_marginEnd="@dimen/gap_8"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayoutHome"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/gap_8"
+            android:background="@color/screen_background_color"/>
+
+
+        <!--dashboard head-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10">
+
+            <!--Logo-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="@dimen/gap_80"
+                android:layout_height="@dimen/gap_80"
+                android:src="@drawable/img_logo"
+                android:layout_marginTop="@dimen/gap_15"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/gap_10"
+                android:layout_toRightOf="@+id/imgLogo"
+                android:layout_toLeftOf="@+id/layoutWeather">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ဒို့တောင်သူ"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:padding="@dimen/gap_8"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 July 2020"
+                    android:layout_marginTop="@dimen/gap_8"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="၁၃၈၂ ၊ နယုန် လဆုတ် ၊ ၇ ရက်"
+                    android:layout_marginTop="@dimen/gap_8"/>
+
+            </LinearLayout>
+
+            <!--Weather-->
+            <LinearLayout
+                android:id="@+id/layoutWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="@dimen/gap_45"
+                    android:src="@drawable/ic_weather"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="@dimen/gap_15"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="26 &#xb0; C"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="မိုးရွာမည်"
+                    android:layout_marginTop="@dimen/gap_10"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--image layout-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="@dimen/gap_10"
+            android:layout_marginStart="@dimen/gap_5"
+            android:layout_marginEnd="@dimen/gap_5"
+            android:background="@drawable/border_stroke_color">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvImgList"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gap_100"/>
+
+            <LinearLayout
+                android:id="@+id/sliderDots"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <!--Title seed prices-->
+        <TextView
+            android:id="@+id/tvTitleSeedPrices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="သီးနှံစျေးနှုန်းများ"
+            android:textSize="@dimen/text_size_14"
+            android:gravity="center"
+            android:padding="@dimen/gap_10"
+            android:layout_margin="@dimen/gap_10"
+            android:background="@drawable/rounded_stroke_color"/>
+
+        <!--1st item-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_learning"
+                android:scaleType="fitXY"
+                android:layout_marginRight="@dimen/gap_10"/>
+
+            <TextView
+                android:id="@+id/tvDesc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_14"
+                android:text="ကျေးလက်ဖွံ့ဖြိုးရေးသင်တန်းများ"
+                android:layout_toRightOf="@+id/img1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="view more ..."
+                android:textSize="@dimen/text_size_13"
+                android:layout_alignBottom="@id/img1"
+                android:layout_toRightOf="@+id/img1"/>
+<!--            android:text="ဘဏ် နှင့် ငွေချေး \n(အသေးစားလုပ်ငန်း)"-->
+
+
+        </RelativeLayout>
+
+        <!--2nd item-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10"
+            android:layout_marginTop="@dimen/gap_10">
+
+            <TextView
+                android:id="@+id/tvDesc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ပွဲရုံ ဆန်စက် နှင့် စျေးများ"
+                android:textSize="@dimen/text_size_14"
+                android:paddingTop="@dimen/gap_10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="view more ..."
+                android:textSize="@dimen/text_size_13"
+                android:layout_alignBottom="@id/img2"/>
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_factory"
+                android:scaleType="fitXY"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/gap_8"/>
+
+        </RelativeLayout>
+
+        <!--3rd item-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10"
+            android:layout_marginTop="@dimen/gap_10">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_service"
+                android:scaleType="fitXY"
+                android:layout_marginRight="@dimen/gap_10"/>
+
+            <TextView
+                android:id="@+id/tvDesc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="စိုက်ပျိုးရေးဆိုင် နှင့် ဝန်ဆောင်မှု လုပ်ငန်း"
+                android:textSize="@dimen/text_size_14"
+                android:paddingTop="@dimen/gap_10"
+                android:layout_toRightOf="@+id/img3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="view more ..."
+                android:textSize="@dimen/text_size_13"
+                android:layout_alignBottom="@id/img3"
+                android:layout_toRightOf="@+id/img3"/>
+
+        </RelativeLayout>
+
+        <!--4th item-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10"
+            android:layout_marginTop="@dimen/gap_10">
+
+            <TextView
+                android:id="@+id/tvDesc4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="နှစ်အလိုက် သီနှဲစျေးနှုန်း နှင့် အထွက်နှုန်းများ"
+                android:textSize="@dimen/text_size_14"
+                android:paddingTop="@dimen/gap_10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="view more ..."
+                android:textSize="@dimen/text_size_13"
+                android:layout_alignBottom="@id/img4"/>
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_anual_seed_price"
+                android:scaleType="fitXY"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/gap_8"/>
+
+        </RelativeLayout>
+
+        <!--5th item-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10"
+            android:layout_marginTop="@dimen/gap_10">
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_info_news"
+                android:scaleType="fitXY"
+                android:layout_marginRight="@dimen/gap_10"/>
+
+            <TextView
+                android:id="@+id/tvDesc5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="သတင်း နှင့် နည်းပညာများ"
+                android:textSize="@dimen/text_size_14"
+                android:paddingTop="@dimen/gap_10"
+                android:layout_toRightOf="@+id/img5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="view more ..."
+                android:textSize="@dimen/text_size_13"
+                android:layout_alignBottom="@id/img5"
+                android:layout_toRightOf="@+id/img5"/>
+
+        </RelativeLayout>
+
+        <!--6th item-->
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10"
+            android:layout_marginTop="@dimen/gap_10">
+
+            <TextView
+                android:id="@+id/tvDesc6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="အတွက်အချက်"
+                android:textSize="@dimen/text_size_14"
+                android:paddingTop="@dimen/gap_10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="view more ..."
+                android:textSize="@dimen/text_size_13"
+                android:layout_alignBottom="@id/img6"/>
+
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_calculations"
+                android:scaleType="fitXY"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/gap_8"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

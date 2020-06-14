@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/container"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/screen_background_color"
+        tools:context=".ui.profile.ProfileFragment">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="110dp"
+            android:layout_height="@dimen/gap_110"
+            android:src="@drawable/farmer"
+            android:layout_marginTop="@dimen/gap_25"
+            android:layout_marginBottom="@dimen/gap_25"
+            android:layout_gravity="center"/>
+
+        <!--Name Row-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/name_txt"
+                android:layout_marginStart="@dimen/gap_10"
+                android:layout_marginEnd="@dimen/gap_10"
+                android:padding="@dimen/gap_8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="U Kaung"
+                android:padding="@dimen/gap_8"
+                android:background="@drawable/border_stroke_color"/>
+
+        </LinearLayout>
+
+        <!--Phone Num Row-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10"
+            android:layout_marginTop="@dimen/gap_10">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/phoneNum_txt"
+                android:layout_marginStart="@dimen/gap_10"
+                android:layout_marginEnd="@dimen/gap_10"
+                android:padding="@dimen/gap_8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="09964321221"
+                android:padding="@dimen/gap_8"
+                android:background="@drawable/border_stroke_color"/>
+
+        </LinearLayout>
+
+        <!--Address Row-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10"
+            android:layout_marginTop="@dimen/gap_10">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/address_txt"
+                android:layout_marginStart="@dimen/gap_10"
+                android:layout_marginEnd="@dimen/gap_10"
+                android:padding="@dimen/gap_8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="No 21. Hlaing Township, Yangon"
+                android:padding="@dimen/gap_8"
+                android:maxLines="2"
+                android:background="@drawable/border_stroke_color"/>
+
+        </LinearLayout>
+
+        <!--Edit Profile-->
+        <RelativeLayout
+            android:id="@+id/layoutEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_20"
+            android:layout_marginEnd="@dimen/gap_20"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/gap_15"
+            android:background="@drawable/rounded_shape_background">
+
+            <ImageView
+                android:id="@+id/iconEditPrfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tvEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ပြင်ဆင်မည်"
+                android:textSize="@dimen/text_size_12"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/gap_15"
+                android:layout_toRightOf="@+id/iconEditPrfile"/>
+
+        </RelativeLayout>
+
+        <!--Divider-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dividerColor"
+            android:layout_marginTop="@dimen/gap_10"
+            android:layout_marginBottom="@dimen/gap_10"/>
+
+        <!--Feedback-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feedback_txt"
+                android:padding="@dimen/gap_10"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <!--Divider-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dividerColor"
+            android:layout_marginTop="@dimen/gap_10"
+            android:layout_marginBottom="@dimen/gap_10"/>
+
+        <!--Question and Answer-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_question_and_answer_txt"
+                android:padding="@dimen/gap_10"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <!--Divider-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dividerColor"
+            android:layout_marginTop="@dimen/gap_10"
+            android:layout_marginBottom="@dimen/gap_10"/>
+
+        <!--About Us-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:padding="@dimen/gap_10"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <!--Divider-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dividerColor"
+            android:layout_marginTop="@dimen/gap_10"
+            android:layout_marginBottom="@dimen/gap_10"/>
+
+    </LinearLayout>
+
+</ScrollView>

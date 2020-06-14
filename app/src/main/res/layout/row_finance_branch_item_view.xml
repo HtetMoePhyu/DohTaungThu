@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/gap_10"
+    android:paddingBottom="@dimen/gap_10">
+
+    <TextView
+        android:id="@+id/tvRowNumber"
+        android:layout_width="@dimen/gap_50"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:padding="@dimen/gap_10"
+        android:layout_alignParentLeft="true"/>
+
+
+    <TextView
+        android:id="@+id/tvRowBranchName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Branch One"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iconRowPhone"
+        android:layout_toRightOf="@+id/tvRowNumber"/>
+
+
+    <ImageView
+        android:id="@+id/iconRowPhone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_phone"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/gap_10"
+        android:layout_marginEnd="@dimen/gap_10"/>
+
+</RelativeLayout>

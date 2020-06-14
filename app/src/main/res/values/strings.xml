@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DohTaungThu</string>
+    <string name="title_home">ပင်မစာမျက်နှာ</string>
+    <string name="title_news">သတင်းများ</string>
+    <string name="title_profile">မိမိ၏ ပရိုဖိုင်</string>
+
+    <string name="title_orders">အော်ဒါများ</string>
+    <string name="name_txt">အမည်</string>
+    <string name="address_txt">နေရပ်လိပ်စာ</string>
+    <string name="phoneNum_txt">ဖုန်းနံပါတ်</string>
+    <string name="feedback_txt">Feedback ေပးရန်</string>
+    <string name="edit_profile_txt">မိမိ၏ ပရိုဖိုင်ပြောင်းလဲရန်</string>
+    <string name="title_notifications">အသိပေးချက်များ</string>
+    <string name="title_seeds">သီးနှံများ</string>
+    <string name="title_map">မြေပုံဖြင့်ရှာရန်</string>
+    <string name="title_companies">Conpanies</string>
+    <string name="title_question_and_answer_txt">အမေး အဖြေ</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

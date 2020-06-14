@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/screen_background_color"
+    tools:context=".ui.finance.adapter.AboutCompanyActivity">
+
+    <!--Back-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/iconBackAboutCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10"/>
+
+        <TextView
+            android:id="@+id/tvFinanceCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:lineSpacingExtra="@dimen/gap_4"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_stroke_color_grey"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imgCompanyLogo"
+            android:layout_width="@dimen/gap_150"
+            android:layout_height="@dimen/gap_100"
+            android:src="@drawable/ic_maha"
+            android:layout_margin="1dp"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvAboutCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="txt"
+        android:textSize="@dimen/text_size_13"
+        android:layout_margin="@dimen/gap_10"/>
+
+</LinearLayout>

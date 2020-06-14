@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_stroke_color"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/closeMapInfoViewButton"
+            android:background="@null"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_close" />
+
+        <!--info layout-->
+        <LinearLayout
+            android:id="@+id/layoutMapInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/closeMapInfoViewButton"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvBranchName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Tampines"
+                android:textColor="#969696" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Address"
+                android:textColor="#969696" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/parentLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/screen_background_color"
+    tools:context=".ui.profile.EditProfileFragment">
+
+    <!--Back-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/iconBackEP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <!--Divider-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        android:layout_marginBottom="@dimen/gap_10"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="110dp"
+        android:layout_height="@dimen/gap_110"
+        android:src="@drawable/default_profile"
+        android:layout_marginTop="@dimen/gap_25"
+        android:layout_marginBottom="@dimen/gap_15"
+        android:layout_gravity="center"/>
+
+    <!--Name-->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Name"
+        android:textSize="@dimen/text_size_14"
+        android:padding="@dimen/gap_10"
+        android:layout_marginStart="@dimen/gap_10"
+        android:layout_marginEnd="@dimen/gap_10"
+        android:background="@drawable/rounded_stroke_color"/>
+
+    <!--Phone-->
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Name"
+        android:textSize="@dimen/text_size_14"
+        android:inputType="number"
+        android:padding="@dimen/gap_10"
+        android:layout_marginStart="@dimen/gap_10"
+        android:layout_marginEnd="@dimen/gap_10"
+        android:layout_marginTop="@dimen/gap_15"
+        android:background="@drawable/rounded_stroke_color"/>
+
+    <!--Address-->
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gap_50"
+        android:hint="Address"
+        android:textSize="@dimen/text_size_14"
+        android:padding="@dimen/gap_10"
+        android:layout_marginStart="@dimen/gap_10"
+        android:layout_marginEnd="@dimen/gap_10"
+        android:layout_marginTop="@dimen/gap_15"
+        android:background="@drawable/rounded_stroke_color"/>
+
+    <Button
+        android:id="@+id/btnSaveEP"
+        android:layout_width="@dimen/gap_150"
+        android:layout_height="@dimen/gap_45"
+        android:text="save"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_shape_background"
+        android:layout_gravity="center"
+        android:padding="@dimen/gap_8"
+        android:layout_marginTop="@dimen/gap_20"/>
+
+</LinearLayout>

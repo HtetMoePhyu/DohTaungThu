@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/gap_8"
+    android:layout_marginStart="@dimen/gap_10"
+    android:layout_marginEnd="@dimen/gap_10">
+
+    <ImageView
+        android:id="@+id/iconSeed"
+        android:layout_width="@dimen/gap_50"
+        android:layout_height="@dimen/gap_50"
+        android:layout_marginRight="@dimen/gap_15"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_seed"/>
+
+    <LinearLayout
+        android:id="@+id/layoutSeedInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/iconSeed">
+
+        <TextView
+            android:id="@+id/tvCompanyNameSeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="company name"
+            android:textSize="@dimen/text_size_14"
+            android:padding="@dimen/gap_8"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tvPersonNameSeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="person name"
+            android:textSize="@dimen/text_size_13"
+            android:paddingStart="@dimen/gap_8"
+            android:paddingEnd="@dimen/gap_8"/>
+
+        <TextView
+            android:id="@+id/tvSeedName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="seed name"
+            android:textSize="@dimen/text_size_13"
+            android:padding="@dimen/gap_8"/>
+
+        <TextView
+            android:id="@+id/tvProductionRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="production region"
+            android:textSize="@dimen/text_size_13"
+            android:paddingStart="@dimen/gap_8"
+            android:paddingEnd="@dimen/gap_8"/>
+
+        <TextView
+            android:id="@+id/tvContactToBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phone number"
+            android:textSize="@dimen/text_size_13"
+            android:padding="@dimen/gap_8"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gap_45"
+        android:text="မှာယူမည်"
+        android:textColor="@android:color/white"
+        android:layout_margin="@dimen/gap_10"
+        android:layout_below="@+id/layoutSeedInfo"
+        android:layout_toRightOf="@+id/iconSeed"
+        android:background="@drawable/rounded_bg_color_green"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        android:layout_below="@id/btnOrder"/>
+
+</RelativeLayout>

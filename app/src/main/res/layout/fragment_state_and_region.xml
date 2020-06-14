@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/screen_background_color"
+    tools:context=".ui.qualityseeds.StateAndRegionFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:text="ပြည်နယ် နှင့် တိုင်းအလိုက် စိုက်ပျိုး သီးနှံများ"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <!--1st row -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:weightSum="3"
+       android:layout_marginStart="@dimen/gap_10"
+       android:layout_marginEnd="@dimen/gap_10">
+
+       <TextView
+           android:id="@+id/tvKaChin"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:text="ကချင်ပြည်နယ်"
+           android:padding="@dimen/gap_15"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:background="@drawable/rounded_stroke_color_grey"/>
+
+       <TextView
+           android:id="@+id/tvYangon"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:text="ရန်ကုန်တိုင်း"
+           android:padding="@dimen/gap_15"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:layout_marginStart="@dimen/gap_10"
+           android:layout_marginEnd="@dimen/gap_10"
+           android:background="@drawable/rounded_stroke_color_grey"/>
+
+       <TextView
+           android:id="@+id/tvShan"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:text="ရှမ်းပြည်နယ်"
+           android:padding="@dimen/gap_15"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:background="@drawable/rounded_stroke_color_grey"/>
+
+
+   </LinearLayout>
+
+    <!--2nd row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_margin="@dimen/gap_10">
+
+        <TextView
+            android:id="@+id/tvSagaing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="စစ်ကိုင်းတိုင်"
+            android:padding="@dimen/gap_15"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/rounded_stroke_color_grey"/>
+
+        <TextView
+            android:id="@+id/tvNPT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="နေပြည်တော်"
+            android:padding="@dimen/gap_15"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10"
+            android:background="@drawable/rounded_stroke_color_grey"/>
+
+        <TextView
+            android:id="@+id/tvAyaWaddy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ဧရာဝတီတိုင်း"
+            android:padding="@dimen/gap_15"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/rounded_stroke_color_grey"/>
+
+
+    </LinearLayout>
+
+    <!--3rd row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginStart="@dimen/gap_10"
+        android:layout_marginEnd="@dimen/gap_10">
+
+        <TextView
+            android:id="@+id/tvPK"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ပဲခူးတိုင်း"
+            android:padding="@dimen/gap_15"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/rounded_stroke_color_grey"/>
+
+        <TextView
+            android:id="@+id/tvMagway"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="မကွေးတိုင်း"
+            android:padding="@dimen/gap_15"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/gap_10"
+            android:layout_marginEnd="@dimen/gap_10"
+            android:background="@drawable/rounded_stroke_color_grey"/>
+
+        <TextView
+            android:id="@+id/tvMdy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="မန္တလေးတိုင်း"
+            android:padding="@dimen/gap_15"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/rounded_stroke_color_grey"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

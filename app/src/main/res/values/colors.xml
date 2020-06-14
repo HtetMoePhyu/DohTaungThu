@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8DBF38</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#8DBF3A</color>
+
+    <color name="screen_background_color">#ffffff</color>
+    <color name="dividerColor">#F4F4F4</color>
+
+    <!--text colors-->
+    <color name="colorWhite">#ffffff</color>
+    <color name="default_text_color">#989898</color>
+
+</resources>
